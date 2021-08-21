@@ -1,3 +1,18 @@
 body{
-    background-color: #c1e2d7;
+    background-color: #1e1e3a;
+    padding-bottom: 50%;
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+}
+.authors{
+    background-color: white;
+    width: 50%;
+}
+h4{
+    color:black;
+}
+p{
+    color:black;
 }

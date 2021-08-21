@@ -14,14 +14,16 @@
      <h1>{{title}}</h1> 
      <hr>
     </div>
-    <div *ngFor='let quote of quotes; let i =index'>
+    <div class="authors" *ngFor='let quote of quotes; let i =index'>
         <div>
             <h4>{{quote.quote}}</h4>
         </div>
         <div>
-            <p><em>{{quote.author}}</em></p>
+            <p><strong><em>{{quote.author}}</em></strong></p>
+            
         </div>
-
+       <div (click)="toggleDetails(i)"><p style="color: #bb7308;">Check</p></div>  
+         
     </div>
   </div>
 </body>
