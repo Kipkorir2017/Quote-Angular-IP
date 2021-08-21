@@ -19,15 +19,16 @@
             <div class="col-md-7">
                 <div *ngFor='let quote of quotesArray; let i = index;'>
                     <div class="authors">
-                        <h4 appHighlight>{{ quote.quotes }}.</h4>
+                        <h4 style="padding-left: 5px;" appHighlight>{{ quote.quotes }}.</h4>
 
                         <div>
-                            <div><strong class="author" style="color: chocolate;">{{quote.author}}</strong>
-                                <p (click)='toggleDetails(i)'><span style="color: #3f1603;">Check</span></p>
+                            <div><strong class="author" style="color: chocolate; padding-left: 5px;">{{quote.author}}</strong>
+                                <p (click)='toggleDetails(i)'><span style="color: #3f1603; padding-left: 5px;">Check</span></p>
                             </div>
                         </div>
                         <app-quote-detail (isDeleted)='deleteQuote($event,i)' *ngIf='quote.toggleQuote'>
                         </app-quote-detail>
+                        <hr style="color: black;">
                     </div>
                 </div>
             </div>
