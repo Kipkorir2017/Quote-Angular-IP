@@ -7,6 +7,11 @@ import { Quote } from '@angular/compiler';
   styleUrls: ['./quote-detail.component.css']
 })
 export class QuoteDetailComponent implements OnInit {
+  @Input() quote!:Quote;
+  @Output() isDeleted=new EventEmitter<boolean>();
+  deleteQuote(read: boolean) {
+    this.isDeleted.emit(read);
+  }
  
   constructor() { }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,31 +10,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
     <title>Quotes</title>
 </head>
+
 <body>
     <div class="container">
         <h2>Best Quotes</h2>
         <hr>
         <div class="row">
-          <div class="col-md-7">
-            <div *ngFor='let quote of quotesArray; let i = index;' >
-              <div id={{i}} class="authors">
-                <h4>{{ quote.quotes }}.</h4>
-              
-              <div>
-                <div><strong class="author">{{quote.author}}</strong></div>
-                <div (click)='toggleDetails(i)'> <p><span style="color: rgb(194, 116, 15);">Check</span></p></div>
-              </div>
-              <app-quote-detail  (isDeleted)='deleteQuote($event,i)' *ngIf='quote.toggleQuote'>
-              </app-quote-detail>
+            <div class="col-md-7">
+                <div *ngFor='let quote of quotesArray; let i = index;'>
+                    <div id={{i}} class="authors">
+                        <h4>{{ quote.quotes }}.</h4>
+
+                        <div>
+                            <div><strong class="author" style="color: chocolate;">{{quote.author}}</strong>
+                                <p (click)='toggleDetails(i)'><span style="color: #3f1603;">Check</span></p>
+                            </div>
+                        </div>
+                        <app-quote-detail (isDeleted)='deleteQuote($event,i)' *ngIf='quote.toggleQuote'>
+                        </app-quote-detail>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <!-- <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form> -->
             </div>
         </div>
-          </div>
-          <div class="col-md-5">
-            <!-- <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form> -->
-          </div>
-        </div>
-      </div>
+    </div>
 </body>
-</html>
 
-    
+</html>
