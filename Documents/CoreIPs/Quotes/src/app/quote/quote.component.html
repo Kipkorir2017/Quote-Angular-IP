@@ -19,7 +19,7 @@
             <div class="col-md-7">
                 <div *ngFor='let quote of quotesArray; let i = index;'>
                     <div id={{i}} class="authors">
-                        <h4>{{ quote.quotes }}.</h4>
+                        <h4 appHighlight>{{ quote.quotes }}.</h4>
 
                         <div>
                             <div><strong class="author" style="color: chocolate;">{{quote.author}}</strong>
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="col-md-5">
-                <!-- <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form> -->
+                <app-quote-form ></app-quote-form> 
             </div>
         </div>
     </div>

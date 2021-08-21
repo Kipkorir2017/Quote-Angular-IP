@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote</title>
+</head>
+
+<body>
+    <div class="form">
+        <h2 style="color: #000000;"> New Quote</h2>
+        <hr  style="color: #000000;">
+        <form #quotesForm='ngForm'>
+            <div class="form-group">
+                <label for="name">Quote:</label>
+                <textarea class="form-control" id="quote" rows="5" name="quote" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="name">Author:</label>
+                <input type="text" class="form-control" id="author" name="author" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Submitted By:</label>
+                <input type="text" class="form-control" id="submittedBy" required>
+
+            </div>
+            <button type="submit" class="btn btn-secondary">Add Quote</button>
+        </form>
+    </div>
+</body>
+
+</html>
