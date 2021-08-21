@@ -1,6 +1,6 @@
 export class Quote {
-    toggleQuote:boolean;
-    constructor(public quote:string,
+    toggleQuote:Boolean;
+    constructor(public quotes:string,
                 public author:string,
                 public submittedBy:string,
                 public upvote:number,

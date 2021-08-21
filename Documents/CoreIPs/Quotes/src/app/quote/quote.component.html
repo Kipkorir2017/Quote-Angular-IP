@@ -1,35 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quotes</title>
+    <title>Document</title>
 </head>
-
 <body>
     <div class="container">
         <div>
-            <h1>{{title}}</h1>
+            <h2>{{title}}</h2>
             <hr>
-        </div>
-        <div class="authors" *ngFor='let quote of quotes; let i =index'>
-            <div>
-                <h4>{{quote.quote}}</h4>
-
-            </div>
-            <div>
-                <p><strong><em>{{quote.author}}</em></strong></p>
-
-            </div>
-            <div (click)="toggleDetails(i)">
-                <p style="color: #bb7308;">Check</p>
-                <app-quote-detail *ngIf='Quote.toggleQuote' [quote]='quote'></app-quote-detail>
-            </div>
-
         </div>
     </div>
 </body>
-
 </html>
