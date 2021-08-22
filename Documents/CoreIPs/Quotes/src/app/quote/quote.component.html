@@ -23,13 +23,13 @@
                         <div class="authors">
                             <div>
                                 <h4 style="padding-left: 5px;" *ngIf='quote.upvote !== getMax() || quote.upvote === 0'>
-                                    {{ quote.quotes }}.</h4>
+                                   <span style="font-weight: bold;">.</span> {{ quote.quotes }}.</h4>
                                 <h4 *ngIf='quote.upvote === getMax() && quote.upvote > 0' appHighlight>{{ quote.quotes}}</h4>
                             </div>
                             <div>
                                 <div><strong class="author"
                                         style="color: chocolate; padding-left: 5px;">{{quote.author}}</strong><br>
-                                    <button (click)='toggleDetails(i)'><span
+                                    <button (click)='toggleDetails(i)' style="border-radius: 20%; margin-left:5px;"><span
                                             style="color: #c41919; padding-left: 5px;">Details</span></button>
                                 </div>
                             </div>
