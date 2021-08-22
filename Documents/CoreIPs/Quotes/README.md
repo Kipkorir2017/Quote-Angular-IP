@@ -38,7 +38,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
  4. TS(Angular) 
 
  ## License
-<a>https://opensource.org/licenses/MIT</a>
+<a>https://github.com/Kipkorir2017/Quote-Angular-IP/blob/master/Documents/CoreIPs/Quotes/LICENSE</a>
 
 * Copyright &#169;  2021 by Benjamin Kipkorir Tonui
 
