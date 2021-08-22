@@ -16,23 +16,23 @@
         <h2>Best Quotes</h2>
         <hr>
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-6">
                 <div *ngFor='let quote of quotesArray; let i = index;'>
                     <div class="authors">
-                        <h4 style="padding-left: 5px;" appHighlight>{{ quote.quotes }}.</h4>
+                        <h4 style="padding-left: 5px;" appHighlight  *ngIf='quote.upvote !== getMax() || quote.upvote === 0'>{{ quote.quotes }}.</h4>
 
                         <div>
                             <div><strong class="author" style="color: chocolate; padding-left: 5px;">{{quote.author}}</strong>
                                 <p (click)='toggleDetails(i)'><span style="color: #3f1603; padding-left: 5px;">Check</span></p>
                             </div>
                         </div>
-                        <app-quote-detail (isDeleted)='deleteQuote($event,i)' *ngIf='quote.toggleQuote'>
+                        <app-quote-detail (isDeleted)='deleteQuote($event,i)' *ngIf='quote.toggleQuote' >
                         </app-quote-detail>
                         <hr style="color: black;">
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <app-quote-form  (addQuote)='addNewQuote($event)'></app-quote-form> 
             </div>
         </div>

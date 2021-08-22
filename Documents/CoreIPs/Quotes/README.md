@@ -1,6 +1,8 @@
-# Quotes
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
+# Quotes 
+## Author
+Tonui Kipkorir Benjamin
+## Descrption
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1., it allows the user to add new quote, upvote, downvote or delete quote
 
 ## Development server
 
@@ -22,6 +24,24 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
+ ## Setup/Installation Requirements
+ * internet 
+ * use terminal to clone the project  .. git clone https://github.com/Kipkorir2017/     Quote-Angular-IP ..
+ * use your favorite code Editor to open the project
+ ## Live site 
+
+ ## Technology used
+ 1. HTML5
+ 2. CSS
+ 3. BootStrap
+ 4. TS(Angular) 
+
+ ## License
+<a>https://opensource.org/licenses/MIT</a>
+Copyright &#169;  2021 by Benjamin Kipkorir Tonui
+
+## Further help
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
