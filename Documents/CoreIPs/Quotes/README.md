@@ -39,7 +39,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
  ## License
 <a>https://opensource.org/licenses/MIT</a>
-Copyright &#169;  2021 by Benjamin Kipkorir Tonui
+
+* Copyright &#169;  2021 by Benjamin Kipkorir Tonui
 
 ## Further help
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
