@@ -30,7 +30,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
  * use terminal to clone the project  .. git clone https://github.com/Kipkorir2017/     Quote-Angular-IP ..
  * use your favorite code Editor to open the project
  ## Live site 
-
+    https://kipkorir2017.github.io/Quote-Angular-IP/
  ## Technology used
  1. HTML5
  2. CSS
